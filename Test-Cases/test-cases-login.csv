@@ -1,0 +1,6 @@
+ID,Module,Test Case Title,Preconditions,Test Steps,Test Data,Expected Result,Priority
+TC-001,Login,Login with valid credentials,User is registered and active,1. Open login page 2. Enter valid email 3. Enter valid password 4. Click Login,Email: user@test.com | Password: Test1234,User is redirected to the dashboard successfully.,High
+TC-002,Login,Login with invalid password,User is registered and active,1. Open login page 2. Enter valid email 3. Enter invalid password 4. Click Login,Email: user@test.com | Password: Wrong123,System displays an error message indicating invalid credentials and user remains on login page.,High
+TC-003,Login,Login with empty required fields,None,1. Open login page 2. Leave email and password empty 3. Click Login,N/A,Validation messages are displayed for required fields and login is not processed.,High
+TC-004,Login,Forgot password link redirects correctly,None,1. Open login page 2. Click 'Forgot Password?' link,N/A,User is redirected to the password recovery page.,Medium
+TC-005,Login,Password field masks entered characters,None,1. Open login page 2. Click password field 3. Type any password,Password: Secret123,Entered password is displayed as masked characters (dots or asterisks).,Medium
